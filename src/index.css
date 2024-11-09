@@ -1,0 +1,31 @@
+/* src/index.css */
+.eco-friendly-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.eco-friendly-info {
+  margin-top: 30px;
+  font-size: 18px;
+  color: green;
+}
