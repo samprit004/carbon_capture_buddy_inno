@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Page_1 from '../Pages/Page_1';
-import Page_2 from '../Pages/Page_2';
+import Page_2 from '../Pages/page_2';
 import './Button.css';
 
 

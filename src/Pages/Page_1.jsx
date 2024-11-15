@@ -11,10 +11,6 @@ const Page_1 = () => {
       <section className='hero'>
       <Nav/>
       <Content/>
-      
-      
-      
-      
       </section>
       </main>
     </div>
