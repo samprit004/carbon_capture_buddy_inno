@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import Nav from './components/nav'
-import EcoFriendlyPage from './EcoFriendlyPage'
-
-import './App.css'
+import React, { useState } from 'react';
+import Nav from './components/nav'; // Ensure this path is correct
+import './App.css'; 
+import ProductInput from './components/ProductInput';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Nav/>
-      <EcoFriendlyPage/>
-    </>
-  )
+    <div className="App">
+      <Nav />
+      <ProductInput /> {/* Using the corrected ProductInput component */}
+    </div>
+  );
 }
 
-export default App
+export default App;
