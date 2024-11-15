@@ -1,16 +1,21 @@
 import { useState } from 'react'
-import Nav from './components/nav'
-import EcoFriendlyPage from './EcoFriendlyPage'
-
 import './App.css'
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Page_1 from './Pages/Page_1';
+import Page_2 from './Pages/page_2';
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <Nav/>
-      <EcoFriendlyPage/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page_1 />} />
+        <Route path="/page_2" element={<Page_2 />} />
+      </Routes>
+    </BrowserRouter>
+      
     </>
   )
 }
