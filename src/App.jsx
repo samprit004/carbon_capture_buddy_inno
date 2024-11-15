@@ -1,17 +1,24 @@
-import React, { useState } from 'react';
-import Nav from './components/nav'; // Ensure this path is correct
-import './App.css'; 
-import ProductInput from './components/ProductInput';
+import { useState } from 'react'
+import './App.css'
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Page_1 from './Pages/Page_1';
+import Page_2 from './Pages/page_2';
 
 function App() {
-  const [count, setCount] = useState(0);
+  
 
   return (
-    <div className="App">
-      <Nav />
-      <ProductInput /> {/* Using the corrected ProductInput component */}
-    </div>
-  );
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Page_1 />} />
+        <Route path="/page_2" element={<Page_2 />} />
+      </Routes>
+    </BrowserRouter>
+      
+    </>
+  )
+
 }
 
 export default App;

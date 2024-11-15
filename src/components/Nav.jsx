@@ -6,7 +6,7 @@ import './Nav.css';
 const Nav = () => {
   return (
     <nav className='nav'>
-        <img src="/images/nav.svg" alt="" />
+        <img className='nav_img' src="/images/nav.svg" alt="" />
         <h2>Cabon Capture Buddy</h2>
     </nav>
   )
