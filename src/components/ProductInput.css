@@ -1,0 +1,125 @@
+/* Wrapper for the app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the top of the box */
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Title styling */
+.title-container {
+  width: 100%;
+  text-align: center; /* Centers the title */
+  margin-bottom: 20px; /* Adds space between the title and the input box */
+}
+
+.main-title {
+  font-size: 18px; /* Smaller font size */
+  color: #9ed59c; /* Text color */
+  border-radius: 15px 15px 0 0; /* Rounded corners on top */
+  border: 2px solid white; /* White border, blending with the background */
+  width: 60%; /* Width adjusts with screen */
+  max-width: 1000px; /* Max width to keep it smaller */
+  height: 51px; /* Set height */
+  background-image: url('/images/Group 9.svg'); /* Correct path to your image */
+  background-size: contain; /* Ensures the image scales with the container */
+  background-color: white; /* Ensures the background color is white */
+  background-position: center center; /* Centers the image both horizontally and vertically */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  display: flex;
+  align-items: center; /* Centers text vertically */
+  justify-content: center; /* Centers text horizontally */
+  margin: 25px 0 0 0; /* Adjust margin for positioning from the top */
+  position: relative; /* Allows positioning adjustments */
+  
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflow text */
+  text-overflow: ellipsis; /* Optional: adds "..." if text overflows */
+  text-align: center; /* Ensures text inside is centered */
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 1024px) {
+  .main-title {
+    width: 80%; /* Slightly larger width for medium-sized screens */
+    height: 45px; /* Adjust height for medium screens */
+    margin: 20px 0 0 0; /* Adjust margin for medium-sized screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    width: 85%; /* Make it larger for smaller screens */
+    height: 40px; /* Adjust height for smaller screens */
+    margin: 15px 0 0 0; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-title {
+    width: 90%; /* Make it wider on very small screens */
+    height: 35px; /* Reduce height on very small screens */
+    margin: 10px 0 0 0; /* Adjust margin for smaller screens */
+  }
+}
+
+
+
+/* Container for the whole content */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content at the top */
+  width: 100%; /* Ensures the container takes full width but stays within the viewport */
+  max-width: 2000px; /* Keeps the container within the max width */
+  height: calc(100vh - 40px); /* Full screen height minus top margin, adjust for a small gap */
+  margin-top: 2px; /* Small gap from the top */
+  margin-bottom: 20px; /* Small gap from the bottom */
+  padding: 10px; /* Small padding to ensure content doesn't touch edges */
+  border: 2px solid #3b602f; /* Green border */
+  border-radius: 15px; /* Rounded corners */
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Ensures padding doesn't affect the width */
+}
+
+
+
+/* Input Block styling */
+.input-container {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px; /* Adds more space between elements */
+  text-align: center; /* Centers the input field inside the container */
+}
+
+.product-input {
+  width: 100%;
+  padding: 15px; /* Larger padding for more space */
+  font-size: 18px; /* Bigger font size */
+  border: 2px solid #3b602f; /* Same green border as page container */
+  border-radius: 15px; /* Rounded edges for the input field */
+  outline: none;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  
+  /* Multiple background images on the right */
+  background-image: 
+    url('/images/add_photo_alternate_rounded.svg'), /* Left image */
+    url('/images/352094_send_icon.svg'); /* Right image */
+  
+  background-position: right 40px center, right 10px center; /* Position both images side by side on the right */
+  background-repeat: no-repeat; /* Don't repeat the images */
+  background-size: 20px 20px, 20px 20px; /* Set the size of both images */
+  
+  padding-right: 60px; /* Add extra space to the right for both images */
+}
+
+
+
+.product-input::placeholder {
+  color: #888; /* Light gray placeholder text */
+  font-style: italic; /* Italicize the placeholder */
+}
