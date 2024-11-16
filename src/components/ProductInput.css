@@ -37,15 +37,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: center;
-  transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
 }
 
 /* Hover effect for the background image */
 .main-title:hover {
-  transform: scale(1.01); /* Fix scale typo */
+  transform: scale(1.01);
 }
 
-/* Media Query for responsiveness */
+/* Media Query for title responsiveness */
 @media screen and (max-width: 1024px) {
   .main-title {
     width: 80%;
@@ -97,32 +97,65 @@
 /* Product Input Box */
 .product-input {
   width: 100%;
-  padding: 15px 50px 15px 15px; /* Added right padding for icons */
+  padding: 15px 50px 15px 15px;
   font-size: 18px;
   border: 2px solid #3b602f;
   border-radius: 15px;
   outline: none;
   box-sizing: border-box;
   position: relative;
-  transition: all 0.3s ease; /* Smooth transition for all hover effects */
+  transition: all 0.3s ease;
 }
 
 /* Hover effect for input box */
 .product-input:hover {
-  border-color: #c8dbca; /* Green border color on hover */
-  background-color: #f3f8f0; 
-  transform: scale(1.02); /* Slightly increase scale */
+  border-color: #c8dbca;
+  background-color: #f3f8f0;
+  transform: scale(1.02);
 }
 
 /* Icon container positioning */
 .icon-container {
   position: absolute;
+  right: 100px;
   top: 50%;
-  right: 15px; /* Position to the right inside the input box */
-  transform: translateY(-50%); /* Vertically center the icons */
+  transform: translateY(-50%);
   display: flex;
-  gap: 10px; /* Space between the icons */
-  align-items: center; /* Ensure vertical centering */
+  gap: 10px;
+}
+
+/* Responsive adjustments for .icon-container */
+@media screen and (max-width: 1024px) {
+  .icon-container {
+    right: 100px; /* Slightly adjusted position for tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon-container {
+    right: 99px; /* Slightly adjusted position for smaller tablets */
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .icon-container {
+    right: 60px; /* Move further right for mobile devices */
+    gap: 5px; /* Reduce gap for small screens */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .icon-container {
+    right: 40px; /* Further adjust for small mobile devices */
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .icon-container {
+    right: 20px; /* Adjust for very small mobile screens */
+    gap: 4px;
+  }
 }
 
 /* Individual icon styling */
@@ -130,13 +163,13 @@
   cursor: pointer;
   width: 20px;
   height: 20px;
-  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling and opacity */
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Hover effect for icons */
 .icon-left:hover, .icon-right:hover {
-  transform: scale(1.2); /* Slightly scale up the icons */
-  opacity: 0.8; /* Slightly fade the icons */
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 /* Placeholder text styling */

@@ -22,27 +22,29 @@ function ProductInput() {
         <div className="input-container">
           <div className="product-input-container">
             {/* Input field */}
-            <input
-              className="product-input"
-              type="text"
-              placeholder="Enter product name"
-            />
-            {/* Icon Container for both icons */}
-            <div className="icon-container">
-              {/* Left Icon */}
-              <img 
-                src="/images/add_photo_alternate_rounded.svg" 
-                alt="Add Photo" 
-                className="icon-left"
-                onClick={handleLeftIconClick} 
+            <div className="input-wrapper">
+              <input
+                className="product-input"
+                type="text"
+                placeholder="Enter product name"
               />
-              {/* Right Icon */}
-              <img 
-                src="/images/352094_send_icon.svg" 
-                alt="Send Icon" 
-                className="icon-right"
-                onClick={handleRightIconClick} 
-              />
+              {/* Icon Container for both icons */}
+              <div className="icon-container">
+                {/* Left Icon */}
+                <img 
+                  src="/images/add_photo_alternate_rounded.svg" 
+                  alt="Add Photo" 
+                  className="icon-left"
+                  onClick={handleLeftIconClick} 
+                />
+                {/* Right Icon */}
+                <img 
+                  src="/images/352094_send_icon.svg" 
+                  alt="Send Icon" 
+                  className="icon-right"
+                  onClick={handleRightIconClick} 
+                />
+              </div>
             </div>
           </div>
         </div>
