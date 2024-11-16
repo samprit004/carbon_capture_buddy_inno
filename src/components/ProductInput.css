@@ -42,7 +42,7 @@
 
 /* Hover effect for the background image */
 .main-title:hover {
-  transform: scale(1.01); /* Scale the background image */
+  transform: scale(1.01); /* Fix scale typo */
 }
 
 /* Media Query for responsiveness */
@@ -91,18 +91,18 @@
 
 .product-input-container {
   position: relative;
+  width: 100%;
 }
 
 /* Product Input Box */
 .product-input {
   width: 100%;
-  padding: 15px;
+  padding: 15px 50px 15px 15px; /* Added right padding for icons */
   font-size: 18px;
   border: 2px solid #3b602f;
   border-radius: 15px;
   outline: none;
   box-sizing: border-box;
-  padding-right: 60px;
   position: relative;
   transition: all 0.3s ease; /* Smooth transition for all hover effects */
 }
@@ -111,19 +111,18 @@
 .product-input:hover {
   border-color: #c8dbca; /* Green border color on hover */
   background-color: #f3f8f0; 
-  transform: scale(1.2);/* Light background on hover */
+  transform: scale(1.02); /* Slightly increase scale */
 }
-
-
 
 /* Icon container positioning */
 .icon-container {
   position: absolute;
   top: 50%;
-  right: 70px;
-  transform: translateY(-50%);
+  right: 15px; /* Position to the right inside the input box */
+  transform: translateY(-50%); /* Vertically center the icons */
   display: flex;
-  gap: 10px; /* Space between icons */
+  gap: 10px; /* Space between the icons */
+  align-items: center; /* Ensure vertical centering */
 }
 
 /* Individual icon styling */
